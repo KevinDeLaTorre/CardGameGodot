@@ -1,0 +1,29 @@
+{
+	"0": {
+		"name": "Soldier",
+		"text": "It ain't much but it's honest work",
+		"type": "minion",
+		"health": 2,
+		"attack": 2,
+		"cost" : 2,
+		"artwork" : {
+			"base": "0-base.png",
+			"rare": "0-rare.png"
+		},
+		"rarity" : 0,
+		"effects": {}
+	},
+	"1": {
+		"name": "Fireball",
+		"text": "Fuego - Deal 2 damage to target",
+		"type": "spell",
+		"cost": "2",
+		"artwork": {
+			"base": "1.png"
+		},
+		"rarity": 0,
+		"effects": {
+			"damageTarget": 2
+		}
+	}
+}
