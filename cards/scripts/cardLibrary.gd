@@ -15,5 +15,5 @@ func readDatabase( path ):
 	readCards( json.result )
 
 func readCards( json ):
-	for id in json.keys:
-		
+	for id in json:
+		print( id )

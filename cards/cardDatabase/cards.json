@@ -15,7 +15,7 @@
 	},
 	"1": {
 		"name": "Fireball",
-		"text": "Fuego - Deal 2 damage to target",
+		"text": "Fuego",
 		"type": "spell",
 		"cost": "2",
 		"artwork": {

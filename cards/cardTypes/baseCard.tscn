@@ -1,6 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=17 format=2]
 
-[sub_resource type="StyleBoxFlat" id=7]
+[ext_resource path="res://fonts/roboto/Roboto-Black.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/roboto/Roboto-BoldItalic.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fonts/roboto/Roboto-BlackItalic.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -8,16 +12,16 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.195312, 0.188446, 0.188446, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
-corner_radius_top_left = 0
-corner_radius_top_right = 0
-corner_radius_bottom_right = 0
-corner_radius_bottom_left = 0
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 corner_detail = 8
 expand_margin_left = 0.0
 expand_margin_right = 0.0
@@ -27,6 +31,7 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
+_sections_unfolded = [ "Border", "Border Width", "Corner Radius" ]
 
 [sub_resource type="StyleBoxFlat" id=2]
 
@@ -36,10 +41,10 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0, 0, 0, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 10
@@ -57,7 +62,15 @@ anti_aliasing = true
 anti_aliasing_size = 1
 _sections_unfolded = [ "Border", "Border Width", "Corner Radius" ]
 
-[sub_resource type="StyleBoxFlat" id=8]
+[sub_resource type="DynamicFont" id=3]
+
+size = 11
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=4]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -65,11 +78,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.6, 0.6, 0.6, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 50
 corner_radius_top_right = 50
@@ -84,9 +97,9 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Corner Radius" ]
+_sections_unfolded = [ "Border", "Border Width", "Corner Radius" ]
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id=5]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -94,11 +107,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0, 0, 0, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 5
 corner_radius_top_right = 5
@@ -113,9 +126,41 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Corner Radius" ]
+_sections_unfolded = [ "Border", "Border Width", "Corner Radius" ]
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="DynamicFont" id=6]
+
+size = 0
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font" ]
+
+[sub_resource type="DynamicFont" id=7]
+
+size = 9
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=8]
+
+size = 9
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=9]
+
+size = 9
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font" ]
+
+[sub_resource type="StyleBoxFlat" id=10]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -123,11 +168,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.23584, 0.729622, 0.875, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 100
 corner_radius_top_right = 100
@@ -142,9 +187,9 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Anti Aliasing", "Corner Radius" ]
+_sections_unfolded = [ "Anti Aliasing", "Border", "Border Width", "Corner Radius" ]
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id=11]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -152,11 +197,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.8125, 0.127945, 0.0761719, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 0
 corner_radius_top_right = 0
@@ -171,9 +216,17 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Anti Aliasing" ]
+_sections_unfolded = [ "Border", "Border Width" ]
 
-[sub_resource type="StyleBoxFlat" id=6]
+[sub_resource type="DynamicFont" id=12]
+
+size = 15
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 1 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=13]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
@@ -181,11 +234,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.121338, 0.554688, 0.189049, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 0
 corner_radius_top_right = 0
@@ -200,30 +253,31 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Anti Aliasing" ]
+_sections_unfolded = [ "Border", "Border Width" ]
 
-[node name="Control" type="Control" index="0"]
+[node name="baseCard" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 185.0
-margin_bottom = 260.0
-rect_min_size = Vector2( 130, 20 )
+margin_right = 170.0
+margin_bottom = 235.0
+rect_min_size = Vector2( 170, 235 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "Size Flags" ]
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="PanelContainer" type="PanelContainer" parent="." index="0"]
+[node name="marginContainer" type="MarginContainer" parent="." index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -234,17 +288,41 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_styles/panel = SubResource( 7 )
-_sections_unfolded = [ "custom_styles" ]
+custom_constants/margin_right = 0
+custom_constants/margin_top = 15
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 0
+_sections_unfolded = [ "custom_constants" ]
 
-[node name="cardContainer" type="MarginContainer" parent="PanelContainer" index="0"]
+[node name="PanelContainer" type="PanelContainer" parent="marginContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 185.0
-margin_bottom = 260.0
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 170.0
+margin_bottom = 235.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 1 )
+_sections_unfolded = [ "Anchor", "Margin", "Size Flags", "custom_styles" ]
+
+[node name="cardContainer" type="MarginContainer" parent="marginContainer/PanelContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 154.0
+margin_bottom = 219.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -257,7 +335,7 @@ custom_constants/margin_left = 6
 custom_constants/margin_bottom = 6
 _sections_unfolded = [ "custom_constants" ]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/cardContainer" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="marginContainer/PanelContainer/cardContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -265,8 +343,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 6.0
 margin_top = 6.0
-margin_right = 179.0
-margin_bottom = 254.0
+margin_right = 147.0
+margin_bottom = 212.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -277,16 +355,16 @@ custom_constants/separation = 6
 alignment = 0
 _sections_unfolded = [ "custom_constants" ]
 
-[node name="topContainer" type="PanelContainer" parent="PanelContainer/cardContainer/VBoxContainer" index="0"]
+[node name="topPanel" type="PanelContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer" index="0"]
 
 editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 173.0
+margin_right = 141.0
 margin_bottom = 20.0
-rect_min_size = Vector2( 59, 20 )
+rect_min_size = Vector2( 0, 20 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -296,14 +374,15 @@ size_flags_vertical = 1
 custom_styles/panel = SubResource( 2 )
 _sections_unfolded = [ "Margin", "Rect", "custom_styles" ]
 
-[node name="lblName" type="Label" parent="PanelContainer/cardContainer/VBoxContainer/topContainer" index="0"]
+[node name="lblName" type="Label" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/topPanel" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = 1.0
 margin_top = 3.0
-margin_right = 173.0
+margin_right = 140.0
 margin_bottom = 17.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -311,57 +390,63 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
 text = "Name"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/cardContainer/VBoxContainer" index="1"]
+[node name="VBoxContainer" type="VBoxContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 26.0
-margin_right = 173.0
-margin_bottom = 248.0
+margin_right = 141.0
+margin_bottom = 206.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
-custom_constants/separation = -12
+custom_constants/separation = -4
 alignment = 0
-_sections_unfolded = [ "custom_constants" ]
+_sections_unfolded = [ "Rect", "custom_constants" ]
 
-[node name="imageContainer" type="PanelContainer" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="0"]
+[node name="TextureRect" type="TextureRect" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 173.0
-margin_bottom = 141.0
+margin_right = 141.0
+margin_bottom = 91.0
+rect_min_size = Vector2( 141, 91 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 0
+mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
-_sections_unfolded = [ "custom_styles" ]
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="1"]
+[node name="HBoxContainer" type="HBoxContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="1"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 129.0
-margin_right = 173.0
-margin_bottom = 159.0
-rect_min_size = Vector2( 0, 30 )
+margin_top = 87.0
+margin_right = 141.0
+margin_bottom = 109.0
+rect_min_size = Vector2( 0, 22 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -369,141 +454,18 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
 alignment = 1
-_sections_unfolded = [ "Anchor", "Rect" ]
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
-[node name="enchantment1" type="Panel" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 76.0
-margin_right = 96.0
-margin_bottom = 30.0
-rect_min_size = Vector2( 20, 20 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_styles/panel = SubResource( 8 )
-_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
-
-[node name="enchantment2" type="Panel" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="1"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 88.0
-margin_right = 108.0
-margin_bottom = 30.0
-rect_min_size = Vector2( 20, 20 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_styles/panel = SubResource( 8 )
-_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
-
-[node name="enchantment3" type="Panel" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="2"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 94.0
-margin_right = 114.0
-margin_bottom = 30.0
-rect_min_size = Vector2( 20, 20 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_styles/panel = SubResource( 8 )
-_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
-
-[node name="bottomContainer" type="PanelContainer" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="2"]
-
-editor/display_folded = true
-show_behind_parent = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 147.0
-margin_right = 173.0
-margin_bottom = 222.0
-rect_min_size = Vector2( 59, 75 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_styles/panel = SubResource( 3 )
-_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
-
-[node name="lblCardText" type="Label" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer/bottomContainer" index="0"]
+[node name="enchantment1" type="Panel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 30.0
-margin_right = 173.0
-margin_bottom = 44.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Card Text"
-align = 1
-autowrap = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="costContainer" type="CenterContainer" parent="." index="1"]
-
-editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -20.0
-margin_top = -20.0
-margin_right = 20.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
-_sections_unfolded = [ "Anchor" ]
-
-[node name="Panel" type="Panel" parent="costContainer" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 5.0
-margin_top = 5.0
-margin_right = 35.0
-margin_bottom = 35.0
-rect_min_size = Vector2( 30, 30 )
+margin_left = 61.0
+margin_right = 79.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 18, 10 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -511,59 +473,59 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_styles/panel = SubResource( 4 )
-_sections_unfolded = [ "Rect", "custom_styles" ]
+_sections_unfolded = [ "Margin", "Rect", "Visibility", "custom_styles" ]
 
-[node name="Label" type="Label" parent="costContainer" index="1"]
+[node name="enchantment2" type="Panel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="1"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 16.0
-margin_top = 13.0
-margin_right = 24.0
-margin_bottom = 27.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "0"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="atkContainer" type="CenterContainer" parent="." index="2"]
-
-editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 1.0
-anchor_right = 0.0
-anchor_bottom = 1.0
-margin_left = -13.0
-margin_top = -21.0
-margin_right = 17.0
-margin_bottom = 9.0
+margin_left = 57.0
+margin_right = 75.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 18, 10 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-use_top_left = false
-_sections_unfolded = [ "Margin" ]
+custom_styles/panel = SubResource( 4 )
+_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
 
-[node name="Panel" type="Panel" parent="atkContainer" index="0"]
+[node name="enchantment3" type="Panel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/HBoxContainer" index="2"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 5.0
-margin_right = 25.0
-margin_bottom = 30.0
-rect_min_size = Vector2( 20, 30 )
+margin_left = 68.0
+margin_right = 86.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 18, 10 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 4 )
+_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
+
+[node name="bottomContainer" type="PanelContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="2"]
+
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 105.0
+margin_right = 141.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 59, 75 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -571,18 +533,164 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_styles/panel = SubResource( 5 )
-_sections_unfolded = [ "Rect", "custom_styles" ]
+_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
 
-[node name="Label" type="Label" parent="atkContainer" index="1"]
+[node name="MarginContainer" type="MarginContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/bottomContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 11.0
-margin_top = 8.0
-margin_right = 19.0
-margin_bottom = 22.0
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 140.0
+margin_bottom = 74.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 4
+custom_constants/margin_top = 6
+custom_constants/margin_left = 4
+custom_constants/margin_bottom = 4
+_sections_unfolded = [ "custom_constants" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/bottomContainer/MarginContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 4.0
+margin_top = 6.0
+margin_right = 135.0
+margin_bottom = 69.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = -3
+alignment = 1
+_sections_unfolded = [ "Margin", "custom_constants" ]
+
+[node name="lblCardText" type="RichTextLabel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/bottomContainer/MarginContainer/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 131.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/bold_italics_font = SubResource( 6 )
+custom_fonts/italics_font = SubResource( 7 )
+custom_fonts/bold_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]Card Text[/center]"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Card Text"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="lblCardText2" type="RichTextLabel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer/bottomContainer/MarginContainer/VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 17.0
+margin_right = 131.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+custom_fonts/bold_italics_font = SubResource( 6 )
+custom_fonts/italics_font = SubResource( 7 )
+custom_fonts/bold_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "[center]Card description here[/center]"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Card description here"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="costContainer" type="CenterContainer" parent="marginContainer/PanelContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 154.0
+margin_bottom = 219.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = true
+_sections_unfolded = [ "Margin" ]
+
+[node name="Panel" type="Panel" parent="marginContainer/PanelContainer/costContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -15.0
+margin_top = -15.0
+margin_right = 15.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 30, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 10 )
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="Label" type="Label" parent="marginContainer/PanelContainer/costContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -4.0
+margin_top = -7.0
+margin_right = 4.0
+margin_bottom = 7.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -593,37 +701,17 @@ text = "0"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Margin" ]
 
-[node name="hpContainer" type="CenterContainer" parent="." index="3"]
+[node name="atkContainer" type="PanelContainer" parent="." index="1"]
 
 editor/display_folded = true
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -17.0
-margin_top = -20.0
-margin_right = 13.0
-margin_bottom = 10.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-use_top_left = false
-_sections_unfolded = [ "Anchor", "Margin" ]
-
-[node name="Panel" type="Panel" parent="hpContainer" index="0"]
-
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 5.0
-margin_right = 25.0
-margin_bottom = 30.0
+margin_left = 7.0
+margin_top = 210.0
+margin_bottom = 235.0
 rect_min_size = Vector2( 20, 30 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -631,29 +719,76 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_styles/panel = SubResource( 6 )
-_sections_unfolded = [ "Rect", "custom_styles" ]
+custom_styles/panel = SubResource( 11 )
+_sections_unfolded = [ "Margin", "custom_styles" ]
 
-[node name="Label" type="Label" parent="hpContainer" index="1"]
+[node name="Label" type="Label" parent="atkContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 11.0
-margin_top = 8.0
+margin_left = 1.0
+margin_top = 6.0
 margin_right = 19.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = SubResource( 12 )
 text = "0"
+align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Margin" ]
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+
+[node name="hpContainer" type="PanelContainer" parent="." index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 158.0
+margin_top = 210.0
+margin_right = 170.0
+margin_bottom = 235.0
+rect_min_size = Vector2( 20, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 13 )
+_sections_unfolded = [ "Margin", "custom_styles" ]
+
+[node name="Label" type="Label" parent="hpContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 6.0
+margin_right = 19.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 12 )
+text = "0"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
 
 

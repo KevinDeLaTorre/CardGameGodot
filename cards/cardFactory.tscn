@@ -4,15 +4,19 @@
 [ext_resource path="res://cards/cardTypes/minionCard.tscn" type="PackedScene" id=2]
 [ext_resource path="res://cards/cardTypes/spellCard.tscn" type="PackedScene" id=3]
 
-[node name="cardFactory" type="Node" index="0"]
+[node name="cardFactory" type="Node"]
 
 script = ExtResource( 1 )
 
 [node name="spellCard" parent="." index="0" instance=ExtResource( 2 )]
 
+margin_right = 130.0
+margin_bottom = 20.0
+
 [node name="minionCard" parent="." index="1" instance=ExtResource( 3 )]
 
 margin_left = 258.0
-margin_right = 443.0
+margin_right = 255.996
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
 

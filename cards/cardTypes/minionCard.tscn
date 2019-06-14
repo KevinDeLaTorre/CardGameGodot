@@ -10,10 +10,10 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.302861, 0.118973, 0.441406, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 10
@@ -39,11 +39,11 @@ content_margin_top = -1.0
 content_margin_bottom = -1.0
 bg_color = Color( 0.302861, 0.118973, 0.441406, 1 )
 draw_center = true
-border_width_left = 0
-border_width_top = 0
-border_width_right = 0
-border_width_bottom = 0
-border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
 border_blend = false
 corner_radius_top_left = 5
 corner_radius_top_right = 5
@@ -58,17 +58,22 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
-_sections_unfolded = [ "Corner Radius" ]
+_sections_unfolded = [ "Border", "Border Width", "Corner Radius" ]
 
-[node name="Control" index="0" instance=ExtResource( 1 )]
+[node name="baseCard" instance=ExtResource( 1 )]
 
-[node name="topContainer" parent="PanelContainer/cardContainer/VBoxContainer" index="0"]
+_sections_unfolded = [ "Rect", "Size Flags" ]
+
+[node name="marginContainer" parent="." index="0"]
+
+editor/display_folded = false
+
+[node name="topPanel" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer" index="0"]
 
 custom_styles/panel = SubResource( 1 )
 
-[node name="bottomContainer" parent="PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="2"]
+[node name="bottomContainer" parent="marginContainer/PanelContainer/cardContainer/VBoxContainer/VBoxContainer" index="2"]
 
-editor/display_folded = false
 custom_styles/panel = SubResource( 2 )
 
 
